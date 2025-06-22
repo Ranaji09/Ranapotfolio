@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="utf-8">
+     <meta content="width=device-width, initial-scale=1.0" name="viewport">
+     <title>Signup</title>
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+
+     <!-- Favicons -->
+     <link rel="shortcut icon" href="assets/img/profile/IMG_20250420_222722552_HDR_AE.jpg" type="image/x-icon">
+
+     <!-- Fonts -->
+     <link href="https://fonts.googleapis.com" rel="preconnect">
+     <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+     <!-- Vendor CSS Files -->
+     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+     <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+     <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+     <!-- Main CSS File -->
+     <link href="assets/css/main.css" rel="stylesheet">
+     <script src="assets/js/signup.js"></script>
+
+     <style>
+          /* Transparent background for input fields */
+          input[type="text"],
+          input[type="email"],
+          input[type="password"],
+          textarea {
+               background-color: transparent;
+               /* Makes the input background transparent */
+               border: 1px solid #ccc;
+               /* Light border for visibility */
+               color: #ece8e8;
+               /* Text color */
+               padding: 10px;
+               /* Padding for better spacing */
+               font-size: 22px;
+               /* Font size */
+               border-radius: 5px;
+               /* Rounded corners */
+               text-transform: capitalize;
+
+          }
+
+          input[type="text"]:focus,
+          input[type="email"]:focus,
+          input[type="password"]:focus {
+               border-color: #b404f4;
+               /* Blue border color when focused */
+               outline: none;
+               /* Remove default outline */
+          }
+
+          input[type="checkbox"] {
+               background-color: transparent;
+               /* Transparent checkbox background */
+          }
+
+          /* Center the form */
+          .signup-form-box {
+               text-align: center;
+               /* Center-align form content */
+          }
+     </style>
+
+</head>
+
+<body class="service-details-page">
+     <i class="header-toggle d-xl-none bi bi-list"></i>
+     <main class="main">
+          <!-- Page Title -->
+          <div class="page-title dark-background">
+               <div class="container d-lg-flex justify-content-between ">
+                    <h1 class="mb-2 mb-lg-0">Please Create Account</h1>
+                    <nav class="breadcrumbs">
+                         <ol>
+                              <li><a href="index.html">Home</a></li>
+                              <li class="current">Signup</li>
+                         </ol>
+                    </nav>
+               </div>
+          </div><!-- End Page Title -->
+
+          <!-- Signup Form Section -->
+          <section id="contact" class="contact section">
+               <div class="container">
+                    <a href="Login.html">Already have an account?</a>
+                    <div class="row g-4 g-lg-5">
+                         <div class="contact-form">
+                              <h3>Create Account </h3>
+                              <form action="#" id="signup-form" method="POST">
+                                   <div class="mb-3">
+                                        <label for="username" class="form-label">Username</label>
+                                        <input type="text" class="form-control" id="username" name="username" required>
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="email" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="password" name="password"
+                                             required>
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                                        <input type="password" class="form-control" id="confirm-password"
+                                             name="confirm-password" required>
+                                   </div>
+                                   <div class="mb-3">
+                                        <label for="upload-profile" class="form-label">Upload-profile</label>
+                                        <input type="file" class="form-control" id="upload-profile"
+                                             name="upload-profile" required>
+                                   </div>
+                                   <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="terms" name="terms"
+                                             required>
+                                        <label class="form-check-label" for="terms">I agree to the Terms and
+                                             Conditions</label>
+                                   </div>
+                                   <button type="submit" class="btn btn-primary">Sign Up</button>
+                              </form>
+                         </div>
+
+                    </div>
+               </div>
+
+          </section><!-- /Contact Section -->
+
+     </main>
+
+     <footer id="footer" class="footer position-relative">
+          <div class="container">
+               <div class="copyright text-center ">
+                    <p>© <span>Copyright</span> <strong class="px-1 sitename">Rana ji Portfolio</strong> <span>All
+                              Rights Reserved</span></p>
+               </div>
+               <div class="credits">
+                    Designed by <a href="">Rana ji</a>
+               </div>
+          </div>
+     </footer>
+
+     <!-- Scroll Top -->
+     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+               class="bi bi-arrow-up-short"></i></a>
+
+     <!-- Preloader -->
+     <div id="preloader"></div>
+
+     <!-- Vendor JS Files -->
+     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+     <script src="assets/vendor/php-email-form/validate.js"></script>
+     <script src="assets/vendor/aos/aos.js"></script>
+     <script src="assets/vendor/typed.js/typed.umd.js"></script>
+     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+     <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+     <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+     <!-- Main JS File -->
+     <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
